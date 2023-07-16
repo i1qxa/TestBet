@@ -35,7 +35,8 @@ class MainActivity : AppCompatActivity() {
         val operatorName = tm.simOperatorName?.lowercase()?:""
         val checkOperatorName = !operatorName.contains("t-mobile") && operatorName.isNotEmpty()
         val intent =
-        if (checkCountry && checkLanguage && checkCountryIso && checkDeviceName && checkOperatorName){
+//        if (checkCountry && checkLanguage && checkCountryIso && checkDeviceName && checkOperatorName){
+        if(true){
             Intent(this, WebFragment::class.java)
         }else{
             Intent(this,ContentActivity::class.java)
