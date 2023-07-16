@@ -85,7 +85,6 @@ private class MyWebViewClient : WebViewClient() {
     private fun checkUrl(url: String): Boolean {
         stopList.forEach {
             if (url.contains(it)) return false
-
         }
         return true
     }
